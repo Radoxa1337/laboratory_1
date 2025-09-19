@@ -24,7 +24,7 @@ namespace lab_1
     {
         private int pointsToPass;
         private string acceptKey;
-        public Exam(string subj, string name, string date, int pointsToPass = 0, string acceptKey = "none") :
+        public Exam(string subj = "Любой", string name = "Без названия", string date = "00.00.00", int pointsToPass = 0, string acceptKey = "none") :
             base(subj, name, date)
         {
             this.pointsToPass = pointsToPass;
@@ -47,7 +47,7 @@ namespace lab_1
     {
         private int pasportID;
         private string indx;
-        public EExam(string subj, string name, string date, int pointsToPass, string acceptKey, int pasportID = 1234, string indx = "xxxx-xxxx")
+        public EExam(string subj = "Любой", string name = "Без названия", string date = "00.00.00", int pointsToPass = 0, string acceptKey = "none", int pasportID = 1234, string indx = "xxxx-xxxx")
             : base(subj, name, date, pointsToPass, acceptKey)
         { this.pasportID = pasportID; this.indx = indx; }
     }
@@ -55,7 +55,7 @@ namespace lab_1
     public class Test : Challenge
     {
         public int maxPoints;
-        public Test(string subj, string name, string date, int maxPoints = 20)
+        public Test(string subj = "Любой", string name = "Без названия", string date = "00.00.00", int maxPoints = 20)
             : base(subj, name, date)
         {
             this.maxPoints = maxPoints;
